@@ -9,7 +9,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.ensemble import RandomForestClassifier
 
 # get data
-df = pd.read_csv('data.csv')
+df = pd.read_csv('../data/data.csv')
 X = df.drop(['satisfaction', 'satisfaction_score'], axis=1).copy()
 y = df['satisfaction_score'].copy()
 
