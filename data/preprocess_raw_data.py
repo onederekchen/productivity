@@ -1,7 +1,7 @@
 import pandas as pd
+import os
 
-path = "base data (dnc)/Daily Recap (Responses) - RAW form responses.csv"
-# raw_target = 'How would you rate your overall satisfaction for the day?'
+path = "../base data (dnc)/Daily Recap (Responses) - RAW form responses.csv"
 
 df = pd.read_csv(path).dropna(subset=['How would you rate your overall satisfaction for the day?'])  # drop missing target values
 
